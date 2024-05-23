@@ -1,6 +1,6 @@
 CMakeFiles/banking.dir/Account.cpp.o: \
-  /Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/Banking/Account.cpp \
-  /Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/Banking/Account.h \
+  /Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/banking/Account.cpp \
+  /Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/banking/Account.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/stdexcept \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__assert \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__config \

@@ -57,10 +57,10 @@ RM = /opt/homebrew/Cellar/cmake/3.29.2/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/Banking
+CMAKE_SOURCE_DIR = /Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/banking
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/Banking/_build
+CMAKE_BINARY_DIR = /Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/banking/_build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,9 +132,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/Banking/_build/CMakeFiles /Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/Banking/_build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/banking/_build/CMakeFiles /Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/banking/_build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/Banking/_build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/banking/_build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -197,7 +197,7 @@ gmock: cmake_check_build_system
 
 # fast build rule for target.
 gmock/fast:
-	$(MAKE) $(MAKESILENT) -f third-party/gtest/googlemock/CMakeFiles/gmock.dir/build.make third-party/gtest/googlemock/CMakeFiles/gmock.dir/build
+	$(MAKE) $(MAKESILENT) -f gtest_build/googlemock/CMakeFiles/gmock.dir/build.make gtest_build/googlemock/CMakeFiles/gmock.dir/build
 .PHONY : gmock/fast
 
 #=============================================================================
@@ -210,7 +210,7 @@ gmock_main: cmake_check_build_system
 
 # fast build rule for target.
 gmock_main/fast:
-	$(MAKE) $(MAKESILENT) -f third-party/gtest/googlemock/CMakeFiles/gmock_main.dir/build.make third-party/gtest/googlemock/CMakeFiles/gmock_main.dir/build
+	$(MAKE) $(MAKESILENT) -f gtest_build/googlemock/CMakeFiles/gmock_main.dir/build.make gtest_build/googlemock/CMakeFiles/gmock_main.dir/build
 .PHONY : gmock_main/fast
 
 #=============================================================================
@@ -223,7 +223,7 @@ gtest: cmake_check_build_system
 
 # fast build rule for target.
 gtest/fast:
-	$(MAKE) $(MAKESILENT) -f third-party/gtest/googletest/CMakeFiles/gtest.dir/build.make third-party/gtest/googletest/CMakeFiles/gtest.dir/build
+	$(MAKE) $(MAKESILENT) -f gtest_build/googletest/CMakeFiles/gtest.dir/build.make gtest_build/googletest/CMakeFiles/gtest.dir/build
 .PHONY : gtest/fast
 
 #=============================================================================
@@ -236,7 +236,7 @@ gtest_main: cmake_check_build_system
 
 # fast build rule for target.
 gtest_main/fast:
-	$(MAKE) $(MAKESILENT) -f third-party/gtest/googletest/CMakeFiles/gtest_main.dir/build.make third-party/gtest/googletest/CMakeFiles/gtest_main.dir/build
+	$(MAKE) $(MAKESILENT) -f gtest_build/googletest/CMakeFiles/gtest_main.dir/build.make gtest_build/googletest/CMakeFiles/gtest_main.dir/build
 .PHONY : gtest_main/fast
 
 Account.o: Account.cpp.o
@@ -287,29 +287,29 @@ Transaction.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/banking.dir/build.make CMakeFiles/banking.dir/Transaction.cpp.s
 .PHONY : Transaction.cpp.s
 
-test.o: test.cpp.o
-.PHONY : test.o
+Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/tests/tests.o: Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/tests/tests.cpp.o
+.PHONY : Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/tests/tests.o
 
 # target to build an object file
-test.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/test.cpp.o
-.PHONY : test.cpp.o
+Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/tests/tests.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/tests/tests.cpp.o
+.PHONY : Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/tests/tests.cpp.o
 
-test.i: test.cpp.i
-.PHONY : test.i
+Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/tests/tests.i: Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/tests/tests.cpp.i
+.PHONY : Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/tests/tests.i
 
 # target to preprocess a source file
-test.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/test.cpp.i
-.PHONY : test.cpp.i
+Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/tests/tests.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/tests/tests.cpp.i
+.PHONY : Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/tests/tests.cpp.i
 
-test.s: test.cpp.s
-.PHONY : test.s
+Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/tests/tests.s: Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/tests/tests.cpp.s
+.PHONY : Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/tests/tests.s
 
 # target to generate assembly for a file
-test.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/test.cpp.s
-.PHONY : test.cpp.s
+Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/tests/tests.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/tests/tests.cpp.s
+.PHONY : Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/tests/tests.cpp.s
 
 # Help Target
 help:
@@ -335,9 +335,9 @@ help:
 	@echo "... Transaction.o"
 	@echo "... Transaction.i"
 	@echo "... Transaction.s"
-	@echo "... test.o"
-	@echo "... test.i"
-	@echo "... test.s"
+	@echo "... Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/tests/tests.o"
+	@echo "... Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/tests/tests.i"
+	@echo "... Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/tests/tests.s"
 .PHONY : help
 
 

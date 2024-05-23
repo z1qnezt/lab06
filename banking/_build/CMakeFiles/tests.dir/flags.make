@@ -4,7 +4,7 @@
 # compile CXX with /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/Banking -isystem /Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/Banking/third-party/gtest/googletest/include -isystem /Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/Banking/third-party/gtest/googletest
+CXX_INCLUDES = -I/Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/banking -isystem /Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/third-party/gtest/googletest/include -isystem /Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/third-party/gtest/googletest
 
 CXX_FLAGSarm64 = -std=gnu++14 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -mmacosx-version-min=14.4
 

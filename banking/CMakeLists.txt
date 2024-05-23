@@ -10,17 +10,22 @@ add_library(banking
 )
 
 target_include_directories(banking PUBLIC
-    ${CMAKE_CURRENT_SOURCE_DIR} 
+    ${CMAKE_CURRENT_SOURCE_DIR}
+)
 
-# Добавьте исполняемый файл для модульных тестов
 add_executable(tests
-    test.cpp
+    ../tests/tests.cpp 
 )
 
 target_include_directories(tests PRIVATE
-    ${CMAKE_CURRENT_SOURCE_DIR} 
+    ${CMAKE_CURRENT_SOURCE_DIR}
+)
 
-add_subdirectory(third-party/gtest)
+# Создаем отдельную директорию для сборки GTest
+set(GTEST_BUILD_DIR ${CMAKE_CURRENT_BINARY_DIR}/gtest_build)
+file(MAKE_DIRECTORY ${GTEST_BUILD_DIR})
+
+add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/../third-party/gtest ${CMAKE_CURRENT_BINARY_DIR}/gtest_build)
 
 target_link_libraries(tests
     banking

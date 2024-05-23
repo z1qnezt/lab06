@@ -53,10 +53,10 @@ RM = /opt/homebrew/Cellar/cmake/3.29.2/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/Banking
+CMAKE_SOURCE_DIR = /Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/banking
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/Banking/_build
+CMAKE_BINARY_DIR = /Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/banking/_build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/tests.dir/depend.make
@@ -69,35 +69,35 @@ include CMakeFiles/tests.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/tests.dir/flags.make
 
-CMakeFiles/tests.dir/test.cpp.o: CMakeFiles/tests.dir/flags.make
-CMakeFiles/tests.dir/test.cpp.o: /Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/Banking/test.cpp
-CMakeFiles/tests.dir/test.cpp.o: CMakeFiles/tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/Banking/_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/tests.dir/test.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tests.dir/test.cpp.o -MF CMakeFiles/tests.dir/test.cpp.o.d -o CMakeFiles/tests.dir/test.cpp.o -c /Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/Banking/test.cpp
+CMakeFiles/tests.dir/Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/tests/tests.cpp.o: CMakeFiles/tests.dir/flags.make
+CMakeFiles/tests.dir/Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/tests/tests.cpp.o: /Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/tests/tests.cpp
+CMakeFiles/tests.dir/Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/tests/tests.cpp.o: CMakeFiles/tests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/banking/_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/tests.dir/Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/tests/tests.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tests.dir/Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/tests/tests.cpp.o -MF CMakeFiles/tests.dir/Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/tests/tests.cpp.o.d -o CMakeFiles/tests.dir/Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/tests/tests.cpp.o -c /Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/tests/tests.cpp
 
-CMakeFiles/tests.dir/test.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/tests.dir/test.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/Banking/test.cpp > CMakeFiles/tests.dir/test.cpp.i
+CMakeFiles/tests.dir/Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/tests/tests.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/tests.dir/Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/tests/tests.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/tests/tests.cpp > CMakeFiles/tests.dir/Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/tests/tests.cpp.i
 
-CMakeFiles/tests.dir/test.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/tests.dir/test.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/Banking/test.cpp -o CMakeFiles/tests.dir/test.cpp.s
+CMakeFiles/tests.dir/Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/tests/tests.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/tests.dir/Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/tests/tests.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/tests/tests.cpp -o CMakeFiles/tests.dir/Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/tests/tests.cpp.s
 
 # Object files for target tests
 tests_OBJECTS = \
-"CMakeFiles/tests.dir/test.cpp.o"
+"CMakeFiles/tests.dir/Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/tests/tests.cpp.o"
 
 # External object files for target tests
 tests_EXTERNAL_OBJECTS =
 
-tests: CMakeFiles/tests.dir/test.cpp.o
+tests: CMakeFiles/tests.dir/Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/tests/tests.cpp.o
 tests: CMakeFiles/tests.dir/build.make
 tests: libbanking.a
 tests: lib/libgtest.a
 tests: lib/libgtest_main.a
 tests: lib/libgtest.a
 tests: CMakeFiles/tests.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/Banking/_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/banking/_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable tests"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/tests.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -109,6 +109,6 @@ CMakeFiles/tests.dir/clean:
 .PHONY : CMakeFiles/tests.dir/clean
 
 CMakeFiles/tests.dir/depend:
-	cd /Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/Banking/_build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/Banking /Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/Banking /Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/Banking/_build /Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/Banking/_build /Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/Banking/_build/CMakeFiles/tests.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/banking/_build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/banking /Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/banking /Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/banking/_build /Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/banking/_build /Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/banking/_build/CMakeFiles/tests.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/tests.dir/depend
 

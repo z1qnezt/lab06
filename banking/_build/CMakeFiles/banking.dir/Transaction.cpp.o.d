@@ -1,6 +1,6 @@
 CMakeFiles/banking.dir/Transaction.cpp.o: \
-  /Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/Banking/Transaction.cpp \
-  /Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/Banking/Transaction.h \
+  /Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/banking/Transaction.cpp \
+  /Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/banking/Transaction.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/cassert \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__assert \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__config \
@@ -826,4 +826,4 @@ CMakeFiles/banking.dir/Transaction.cpp.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/_types/_nl_item.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__locale_dir/locale_base_api/bsd_locale_defaults.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/cstdarg \
-  /Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/Banking/Account.h
+  /Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/banking/Account.h
