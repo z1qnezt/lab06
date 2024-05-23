@@ -1,0 +1,1 @@
+/Users/mihailerosenko/z1qnezt/workspace/projects/lab06/_build/_CPack_Packages/Darwin/TGZ/solver-0.1.1-Darwin/bin/solver
