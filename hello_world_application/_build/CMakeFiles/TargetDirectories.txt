@@ -1,0 +1,9 @@
+/home/vboxuser/WhiteSunOfSpace/workspace/lab03/hello_world_application/_build/CMakeFiles/main.dir
+/home/vboxuser/WhiteSunOfSpace/workspace/lab03/hello_world_application/_build/CMakeFiles/edit_cache.dir
+/home/vboxuser/WhiteSunOfSpace/workspace/lab03/hello_world_application/_build/CMakeFiles/rebuild_cache.dir
+/home/vboxuser/WhiteSunOfSpace/workspace/lab03/hello_world_application/_build/formatter_ex_lib/CMakeFiles/formatter_ex_lib.dir
+/home/vboxuser/WhiteSunOfSpace/workspace/lab03/hello_world_application/_build/formatter_ex_lib/CMakeFiles/edit_cache.dir
+/home/vboxuser/WhiteSunOfSpace/workspace/lab03/hello_world_application/_build/formatter_ex_lib/CMakeFiles/rebuild_cache.dir
+/home/vboxuser/WhiteSunOfSpace/workspace/lab03/hello_world_application/_build/formatter_ex_lib/formatter_lib/CMakeFiles/formatter_lib.dir
+/home/vboxuser/WhiteSunOfSpace/workspace/lab03/hello_world_application/_build/formatter_ex_lib/formatter_lib/CMakeFiles/edit_cache.dir
+/home/vboxuser/WhiteSunOfSpace/workspace/lab03/hello_world_application/_build/formatter_ex_lib/formatter_lib/CMakeFiles/rebuild_cache.dir
