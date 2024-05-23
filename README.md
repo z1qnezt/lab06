@@ -1,6 +1,6 @@
 # все в ветке master
 ## CmakeLists.txt
-'''
+```
 cmake_minimum_required(VERSION 3.10)
 
 project(solver)
@@ -27,9 +27,9 @@ install(TARGETS solver
 )
 
 include(CPack.cmake)
-'''
+```
 ## Cpack.cmake
-'''
+```
 include(InstallRequiredSystemLibraries)
 
 set(CPACK_PACKAGE_VERSION ${PRINT_VERSION})
@@ -109,9 +109,9 @@ jobs:
         name: example
         path: build/solver
 
-'''
+```
 ## Cpack.yml
-'''
+```
 name: CPack
 
 on:
@@ -145,4 +145,4 @@ jobs:
       with:
         artifacts: "build/*.deb,build/*.tar.gz,build/*.zip"
         token: ${{ secrets.GITHUB_TOKEN }}
-'''
+```
