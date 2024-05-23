@@ -4,27 +4,38 @@ project(banking)
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
+# Добавьте библиотеку banking
 add_library(banking
-    Transaction.cpp
     Account.cpp
+    Transaction.cpp
+    # Другие исходные файлы вашей библиотеки banking
 )
 
+# Укажите пути для включения заголовочных файлов
 target_include_directories(banking PUBLIC
-    ${CMAKE_CURRENT_SOURCE_DIR}
+    ${CMAKE_CURRENT_SOURCE_DIR}  # Путь к заголовочным файлам библиотеки banking
 )
 
-set_target_properties(banking PROPERTIES
-    POSITION_INDEPENDENT_CODE ON
+# Добавьте исполняемый файл для модульных тестов
+add_executable(tests
+    test.cpp  # Ваш файл с тестами
 )
 
-install(
-    DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}
-    DESTINATION include
-    FILES_MATCHING PATTERN "*.h"
+# Укажите пути для включения заголовочных файлов библиотеки banking в тесты
+target_include_directories(tests PRIVATE
+    ${CMAKE_CURRENT_SOURCE_DIR}  # Путь к заголовочным файлам библиотеки banking
 )
 
-install(
-    TARGETS banking
-    LIBRARY DESTINATION lib
-    ARCHIVE DESTINATION lib
+# Добавьте путь к папке с библиотекой Google Test
+add_subdirectory(third-party/gtest)
+
+# Добавление тестов и их зависимостей
+target_link_libraries(tests
+    banking
+    gtest
+    gtest_main
+    pthread
 )
+
+# Добавление команды для запуска тестов
+add_test(NAME test_all COMMAND tests)

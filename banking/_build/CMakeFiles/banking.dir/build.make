@@ -69,24 +69,10 @@ include CMakeFiles/banking.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/banking.dir/flags.make
 
-CMakeFiles/banking.dir/Transaction.cpp.o: CMakeFiles/banking.dir/flags.make
-CMakeFiles/banking.dir/Transaction.cpp.o: /Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/Banking/Transaction.cpp
-CMakeFiles/banking.dir/Transaction.cpp.o: CMakeFiles/banking.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/Banking/_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/banking.dir/Transaction.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/banking.dir/Transaction.cpp.o -MF CMakeFiles/banking.dir/Transaction.cpp.o.d -o CMakeFiles/banking.dir/Transaction.cpp.o -c /Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/Banking/Transaction.cpp
-
-CMakeFiles/banking.dir/Transaction.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/banking.dir/Transaction.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/Banking/Transaction.cpp > CMakeFiles/banking.dir/Transaction.cpp.i
-
-CMakeFiles/banking.dir/Transaction.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/banking.dir/Transaction.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/Banking/Transaction.cpp -o CMakeFiles/banking.dir/Transaction.cpp.s
-
 CMakeFiles/banking.dir/Account.cpp.o: CMakeFiles/banking.dir/flags.make
 CMakeFiles/banking.dir/Account.cpp.o: /Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/Banking/Account.cpp
 CMakeFiles/banking.dir/Account.cpp.o: CMakeFiles/banking.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/Banking/_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/banking.dir/Account.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/Banking/_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/banking.dir/Account.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/banking.dir/Account.cpp.o -MF CMakeFiles/banking.dir/Account.cpp.o.d -o CMakeFiles/banking.dir/Account.cpp.o -c /Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/Banking/Account.cpp
 
 CMakeFiles/banking.dir/Account.cpp.i: cmake_force
@@ -97,16 +83,30 @@ CMakeFiles/banking.dir/Account.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/banking.dir/Account.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/Banking/Account.cpp -o CMakeFiles/banking.dir/Account.cpp.s
 
+CMakeFiles/banking.dir/Transaction.cpp.o: CMakeFiles/banking.dir/flags.make
+CMakeFiles/banking.dir/Transaction.cpp.o: /Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/Banking/Transaction.cpp
+CMakeFiles/banking.dir/Transaction.cpp.o: CMakeFiles/banking.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/Banking/_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/banking.dir/Transaction.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/banking.dir/Transaction.cpp.o -MF CMakeFiles/banking.dir/Transaction.cpp.o.d -o CMakeFiles/banking.dir/Transaction.cpp.o -c /Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/Banking/Transaction.cpp
+
+CMakeFiles/banking.dir/Transaction.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/banking.dir/Transaction.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/Banking/Transaction.cpp > CMakeFiles/banking.dir/Transaction.cpp.i
+
+CMakeFiles/banking.dir/Transaction.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/banking.dir/Transaction.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/Banking/Transaction.cpp -o CMakeFiles/banking.dir/Transaction.cpp.s
+
 # Object files for target banking
 banking_OBJECTS = \
-"CMakeFiles/banking.dir/Transaction.cpp.o" \
-"CMakeFiles/banking.dir/Account.cpp.o"
+"CMakeFiles/banking.dir/Account.cpp.o" \
+"CMakeFiles/banking.dir/Transaction.cpp.o"
 
 # External object files for target banking
 banking_EXTERNAL_OBJECTS =
 
-libbanking.a: CMakeFiles/banking.dir/Transaction.cpp.o
 libbanking.a: CMakeFiles/banking.dir/Account.cpp.o
+libbanking.a: CMakeFiles/banking.dir/Transaction.cpp.o
 libbanking.a: CMakeFiles/banking.dir/build.make
 libbanking.a: CMakeFiles/banking.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/Banking/_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libbanking.a"

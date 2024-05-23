@@ -442,3 +442,43 @@ events:
       LTO support using: LLVM version 15.0.0 (static support for 29, runtime is 29)
       TAPI support using: Apple TAPI version 15.0.0 (tapi-1500.3.2.2)
 ...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.29.2/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.29.2/share/cmake/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "/opt/homebrew/Cellar/cmake/3.29.2/share/cmake/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "/opt/homebrew/Cellar/cmake/3.29.2/share/cmake/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "third-party/gtest/googletest/cmake/internal_utils.cmake:66 (find_package)"
+      - "third-party/gtest/googletest/CMakeLists.txt:83 (config_compiler_and_linker)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "/Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/Banking/_build/CMakeFiles/CMakeScratch/TryCompile-dZFSrV"
+      binary: "/Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/Banking/_build/CMakeFiles/CMakeScratch/TryCompile-dZFSrV"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "14.4"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/Banking/_build/CMakeFiles/CMakeScratch/TryCompile-dZFSrV'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.29.2/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_f65bc/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_f65bc.dir/build.make CMakeFiles/cmTC_f65bc.dir/build
+        Building C object CMakeFiles/cmTC_f65bc.dir/src.c.o
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -mmacosx-version-min=14.4 -MD -MT CMakeFiles/cmTC_f65bc.dir/src.c.o -MF CMakeFiles/cmTC_f65bc.dir/src.c.o.d -o CMakeFiles/cmTC_f65bc.dir/src.c.o -c /Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/Banking/_build/CMakeFiles/CMakeScratch/TryCompile-dZFSrV/src.c
+        Linking C executable cmTC_f65bc
+        /opt/homebrew/Cellar/cmake/3.29.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f65bc.dir/link.txt --verbose=1
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -mmacosx-version-min=14.4 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_f65bc.dir/src.c.o -o cmTC_f65bc
+        
+      exitCode: 0
+...

@@ -64,15 +64,70 @@ CMAKE_BINARY_DIR = /Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/Ban
 
 # The main recursive "all" target.
 all: CMakeFiles/banking.dir/all
+all: CMakeFiles/tests.dir/all
+all: third-party/gtest/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall:
+preinstall: third-party/gtest/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
 clean: CMakeFiles/banking.dir/clean
+clean: CMakeFiles/tests.dir/clean
+clean: third-party/gtest/clean
 .PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory third-party/gtest
+
+# Recursive "all" directory target.
+third-party/gtest/all: third-party/gtest/googlemock/all
+.PHONY : third-party/gtest/all
+
+# Recursive "preinstall" directory target.
+third-party/gtest/preinstall: third-party/gtest/googlemock/preinstall
+.PHONY : third-party/gtest/preinstall
+
+# Recursive "clean" directory target.
+third-party/gtest/clean: third-party/gtest/googlemock/clean
+.PHONY : third-party/gtest/clean
+
+#=============================================================================
+# Directory level rules for directory third-party/gtest/googlemock
+
+# Recursive "all" directory target.
+third-party/gtest/googlemock/all: third-party/gtest/googlemock/CMakeFiles/gmock.dir/all
+third-party/gtest/googlemock/all: third-party/gtest/googlemock/CMakeFiles/gmock_main.dir/all
+third-party/gtest/googlemock/all: third-party/gtest/googletest/all
+.PHONY : third-party/gtest/googlemock/all
+
+# Recursive "preinstall" directory target.
+third-party/gtest/googlemock/preinstall: third-party/gtest/googletest/preinstall
+.PHONY : third-party/gtest/googlemock/preinstall
+
+# Recursive "clean" directory target.
+third-party/gtest/googlemock/clean: third-party/gtest/googlemock/CMakeFiles/gmock.dir/clean
+third-party/gtest/googlemock/clean: third-party/gtest/googlemock/CMakeFiles/gmock_main.dir/clean
+third-party/gtest/googlemock/clean: third-party/gtest/googletest/clean
+.PHONY : third-party/gtest/googlemock/clean
+
+#=============================================================================
+# Directory level rules for directory third-party/gtest/googletest
+
+# Recursive "all" directory target.
+third-party/gtest/googletest/all: third-party/gtest/googletest/CMakeFiles/gtest.dir/all
+third-party/gtest/googletest/all: third-party/gtest/googletest/CMakeFiles/gtest_main.dir/all
+.PHONY : third-party/gtest/googletest/all
+
+# Recursive "preinstall" directory target.
+third-party/gtest/googletest/preinstall:
+.PHONY : third-party/gtest/googletest/preinstall
+
+# Recursive "clean" directory target.
+third-party/gtest/googletest/clean: third-party/gtest/googletest/CMakeFiles/gtest.dir/clean
+third-party/gtest/googletest/clean: third-party/gtest/googletest/CMakeFiles/gtest_main.dir/clean
+.PHONY : third-party/gtest/googletest/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/banking.dir
@@ -99,6 +154,139 @@ banking: CMakeFiles/banking.dir/rule
 CMakeFiles/banking.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/banking.dir/build.make CMakeFiles/banking.dir/clean
 .PHONY : CMakeFiles/banking.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/tests.dir
+
+# All Build rule for target.
+CMakeFiles/tests.dir/all: CMakeFiles/banking.dir/all
+CMakeFiles/tests.dir/all: third-party/gtest/googletest/CMakeFiles/gtest.dir/all
+CMakeFiles/tests.dir/all: third-party/gtest/googletest/CMakeFiles/gtest_main.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/Banking/_build/CMakeFiles --progress-num=12,13 "Built target tests"
+.PHONY : CMakeFiles/tests.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/tests.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/Banking/_build/CMakeFiles 9
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/tests.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/Banking/_build/CMakeFiles 0
+.PHONY : CMakeFiles/tests.dir/rule
+
+# Convenience name for target.
+tests: CMakeFiles/tests.dir/rule
+.PHONY : tests
+
+# clean rule for target.
+CMakeFiles/tests.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/clean
+.PHONY : CMakeFiles/tests.dir/clean
+
+#=============================================================================
+# Target rules for target third-party/gtest/googlemock/CMakeFiles/gmock.dir
+
+# All Build rule for target.
+third-party/gtest/googlemock/CMakeFiles/gmock.dir/all: third-party/gtest/googletest/CMakeFiles/gtest.dir/all
+	$(MAKE) $(MAKESILENT) -f third-party/gtest/googlemock/CMakeFiles/gmock.dir/build.make third-party/gtest/googlemock/CMakeFiles/gmock.dir/depend
+	$(MAKE) $(MAKESILENT) -f third-party/gtest/googlemock/CMakeFiles/gmock.dir/build.make third-party/gtest/googlemock/CMakeFiles/gmock.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/Banking/_build/CMakeFiles --progress-num=4,5 "Built target gmock"
+.PHONY : third-party/gtest/googlemock/CMakeFiles/gmock.dir/all
+
+# Build rule for subdir invocation for target.
+third-party/gtest/googlemock/CMakeFiles/gmock.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/Banking/_build/CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 third-party/gtest/googlemock/CMakeFiles/gmock.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/Banking/_build/CMakeFiles 0
+.PHONY : third-party/gtest/googlemock/CMakeFiles/gmock.dir/rule
+
+# Convenience name for target.
+gmock: third-party/gtest/googlemock/CMakeFiles/gmock.dir/rule
+.PHONY : gmock
+
+# clean rule for target.
+third-party/gtest/googlemock/CMakeFiles/gmock.dir/clean:
+	$(MAKE) $(MAKESILENT) -f third-party/gtest/googlemock/CMakeFiles/gmock.dir/build.make third-party/gtest/googlemock/CMakeFiles/gmock.dir/clean
+.PHONY : third-party/gtest/googlemock/CMakeFiles/gmock.dir/clean
+
+#=============================================================================
+# Target rules for target third-party/gtest/googlemock/CMakeFiles/gmock_main.dir
+
+# All Build rule for target.
+third-party/gtest/googlemock/CMakeFiles/gmock_main.dir/all: third-party/gtest/googlemock/CMakeFiles/gmock.dir/all
+third-party/gtest/googlemock/CMakeFiles/gmock_main.dir/all: third-party/gtest/googletest/CMakeFiles/gtest.dir/all
+	$(MAKE) $(MAKESILENT) -f third-party/gtest/googlemock/CMakeFiles/gmock_main.dir/build.make third-party/gtest/googlemock/CMakeFiles/gmock_main.dir/depend
+	$(MAKE) $(MAKESILENT) -f third-party/gtest/googlemock/CMakeFiles/gmock_main.dir/build.make third-party/gtest/googlemock/CMakeFiles/gmock_main.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/Banking/_build/CMakeFiles --progress-num=6,7 "Built target gmock_main"
+.PHONY : third-party/gtest/googlemock/CMakeFiles/gmock_main.dir/all
+
+# Build rule for subdir invocation for target.
+third-party/gtest/googlemock/CMakeFiles/gmock_main.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/Banking/_build/CMakeFiles 6
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 third-party/gtest/googlemock/CMakeFiles/gmock_main.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/Banking/_build/CMakeFiles 0
+.PHONY : third-party/gtest/googlemock/CMakeFiles/gmock_main.dir/rule
+
+# Convenience name for target.
+gmock_main: third-party/gtest/googlemock/CMakeFiles/gmock_main.dir/rule
+.PHONY : gmock_main
+
+# clean rule for target.
+third-party/gtest/googlemock/CMakeFiles/gmock_main.dir/clean:
+	$(MAKE) $(MAKESILENT) -f third-party/gtest/googlemock/CMakeFiles/gmock_main.dir/build.make third-party/gtest/googlemock/CMakeFiles/gmock_main.dir/clean
+.PHONY : third-party/gtest/googlemock/CMakeFiles/gmock_main.dir/clean
+
+#=============================================================================
+# Target rules for target third-party/gtest/googletest/CMakeFiles/gtest.dir
+
+# All Build rule for target.
+third-party/gtest/googletest/CMakeFiles/gtest.dir/all:
+	$(MAKE) $(MAKESILENT) -f third-party/gtest/googletest/CMakeFiles/gtest.dir/build.make third-party/gtest/googletest/CMakeFiles/gtest.dir/depend
+	$(MAKE) $(MAKESILENT) -f third-party/gtest/googletest/CMakeFiles/gtest.dir/build.make third-party/gtest/googletest/CMakeFiles/gtest.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/Banking/_build/CMakeFiles --progress-num=8,9 "Built target gtest"
+.PHONY : third-party/gtest/googletest/CMakeFiles/gtest.dir/all
+
+# Build rule for subdir invocation for target.
+third-party/gtest/googletest/CMakeFiles/gtest.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/Banking/_build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 third-party/gtest/googletest/CMakeFiles/gtest.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/Banking/_build/CMakeFiles 0
+.PHONY : third-party/gtest/googletest/CMakeFiles/gtest.dir/rule
+
+# Convenience name for target.
+gtest: third-party/gtest/googletest/CMakeFiles/gtest.dir/rule
+.PHONY : gtest
+
+# clean rule for target.
+third-party/gtest/googletest/CMakeFiles/gtest.dir/clean:
+	$(MAKE) $(MAKESILENT) -f third-party/gtest/googletest/CMakeFiles/gtest.dir/build.make third-party/gtest/googletest/CMakeFiles/gtest.dir/clean
+.PHONY : third-party/gtest/googletest/CMakeFiles/gtest.dir/clean
+
+#=============================================================================
+# Target rules for target third-party/gtest/googletest/CMakeFiles/gtest_main.dir
+
+# All Build rule for target.
+third-party/gtest/googletest/CMakeFiles/gtest_main.dir/all: third-party/gtest/googletest/CMakeFiles/gtest.dir/all
+	$(MAKE) $(MAKESILENT) -f third-party/gtest/googletest/CMakeFiles/gtest_main.dir/build.make third-party/gtest/googletest/CMakeFiles/gtest_main.dir/depend
+	$(MAKE) $(MAKESILENT) -f third-party/gtest/googletest/CMakeFiles/gtest_main.dir/build.make third-party/gtest/googletest/CMakeFiles/gtest_main.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/Banking/_build/CMakeFiles --progress-num=10,11 "Built target gtest_main"
+.PHONY : third-party/gtest/googletest/CMakeFiles/gtest_main.dir/all
+
+# Build rule for subdir invocation for target.
+third-party/gtest/googletest/CMakeFiles/gtest_main.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/Banking/_build/CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 third-party/gtest/googletest/CMakeFiles/gtest_main.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/Banking/_build/CMakeFiles 0
+.PHONY : third-party/gtest/googletest/CMakeFiles/gtest_main.dir/rule
+
+# Convenience name for target.
+gtest_main: third-party/gtest/googletest/CMakeFiles/gtest_main.dir/rule
+.PHONY : gtest_main
+
+# clean rule for target.
+third-party/gtest/googletest/CMakeFiles/gtest_main.dir/clean:
+	$(MAKE) $(MAKESILENT) -f third-party/gtest/googletest/CMakeFiles/gtest_main.dir/build.make third-party/gtest/googletest/CMakeFiles/gtest_main.dir/clean
+.PHONY : third-party/gtest/googletest/CMakeFiles/gtest_main.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

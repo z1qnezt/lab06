@@ -1,29 +1,24 @@
 #pragma once
 
+#include <stdexcept>
+
 class Account {
- public:
-  Account(int id, int balance);
-  virtual ~Account();
+public:
+    Account(int id, int balance);
+    virtual ~Account();
 
-  // Virtual to test.
-  virtual int GetBalance() const;
+    virtual int GetBalance() const;
+    virtual void ChangeBalance(int diff);
+    virtual void Lock();
+    virtual void Unlock();
+    int id() const { return id_; }
 
-  // Virtual to test.
-  virtual void ChangeBalance(int diff);
+    bool operator==(const Account& other) const {
+        return id_ == other.id_ && balance_ == other.balance_;
+    }
 
-  // Virtual to test.
-  virtual void Lock();
-
-  // Virtual to test.
-  virtual void Unlock();
-  int id() const { return id_; }
-
-  bool operator==(const Account& other) const {
-    return id_ == other.id_ && balance_ == other.balance_;
-  }
-
- private:
-  int id_;
-  int balance_;
-  bool is_locked_;
+private:
+    int id_;
+    int balance_;
+    bool is_locked_;
 };
