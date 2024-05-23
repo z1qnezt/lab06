@@ -1,0 +1,3 @@
+/Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/_build/CMakeFiles/banking.dir
+/Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/_build/CMakeFiles/edit_cache.dir
+/Users/mihailerosenko/z1qnezt/workspace/projects/lab05_hw/_build/CMakeFiles/rebuild_cache.dir
